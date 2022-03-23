@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variaveis 
+
+Ubuntu
+Nunito
+Roboto
+
+*/
+
+:root {
+  --fonts--titles--content: "Roboto", sans-serif;
+}
+
+body {
+  height: auto;
+  background-image: url("../../assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.image {
+  width: 400px;
+  margin: 3.5% 2%;
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease-in-out;
+}
+
+.image:hover {
+  transform: translateY(2px);
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-submit {
+  width: 60%;
+  height: 50px;
+  background: linear-gradient(to right, rgb(51, 82, 223), rgba(91, 195, 255));
+  border: 1px solid rgba(51, 82, 223, 0.5);
+  border-radius: 20px;
+  color: White;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn-submit:hover {
+  background: rgba(19, 56, 221);
+}
+
+.btn-submit:active {
+  transform: translateY(3px);
+  transition: 0.2s ease-in-out;
+}
