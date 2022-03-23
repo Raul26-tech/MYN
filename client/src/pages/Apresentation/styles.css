@@ -57,10 +57,14 @@ body {
   background: linear-gradient(to right, rgb(51, 82, 223), rgba(91, 195, 255));
   border: 1px solid rgba(51, 82, 223, 0.5);
   border-radius: 20px;
-  color: White;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   font-size: 18px;
+}
+
+.btn-submit a {
+  text-decoration: none;
+  color: White;
 }
 
 .btn-submit:hover {
@@ -70,4 +74,49 @@ body {
 .btn-submit:active {
   transform: translateY(3px);
   transition: 0.2s ease-in-out;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  .image {
+    width: 300px;
+    margin: 6% 2%;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .btn-submit {
+    /* position: relative; */
+    width: 80%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .image {
+    width: 50%;
+    margin: 6% 2%;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .btn-submit {
+    width: 90%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .image {
+    width: 300px;
+    margin: 6% 2%;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .btn-submit {
+    width: 100%;
+    height: 50px;
+  }
 }
