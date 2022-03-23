@@ -41,7 +41,7 @@ body {
 }
 
 .image:hover {
-  transform: translateY(2px);
+  transform: translateY(3px);
 }
 
 .box {
@@ -64,7 +64,7 @@ body {
 }
 
 .btn-submit:hover {
-  background: rgba(19, 56, 221);
+  background: rgba(19, 56, 221, 0.9);
 }
 
 .btn-submit:active {
