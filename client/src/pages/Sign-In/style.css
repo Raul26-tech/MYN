@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Ubuntu";
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+.logo {
+  color: black;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: "Nunito";
+  font-weight: bold;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+  transition: 0.5s;
+}
+
+.nav-list li:hover {
+  transform: translateY(2px);
+}
+
+button {
+  background: rgba(21, 52, 230, 0.8);
+  width: 40px;
+  height: 5vh;
+  border: 0;
+  border-radius: 50px;
+}
+
+.icon {
+  color: aliceblue;
+  border-radius: 50px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu ul:hover {
+  background: rgba(21, 52, 230, 0.8);
+}
+
+@media screen and (max-width: 730px) {
+  nav {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .nav-item {
+    display: block;
+    padding: 1.2rem;
+    transition: 0.2s;
+  }
+
+  .nav-item:hover {
+    border-bottom: 4px solid rgba(0, 43, 184, 0.3);
+  }
+
+  .open {
+    display: block;
+  }
+}
