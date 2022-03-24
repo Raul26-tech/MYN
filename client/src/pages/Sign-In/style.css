@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 header {
   width: 100%;
 }
@@ -49,7 +54,7 @@ nav {
   transform: translateY(2px);
 }
 
-button {
+.btn {
   background: rgba(21, 52, 230, 0.8);
   width: 40px;
   height: 5vh;
@@ -70,8 +75,74 @@ button {
   display: none;
 }
 
-.mobile-menu ul:hover {
-  background: rgba(21, 52, 230, 0.8);
+/* Section */
+
+section {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../../assets/job2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.content-box {
+  margin: 4%;
+  width: 40%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1.5rem 2rem;
+  text-align: justify;
+  font-family: "Ubuntu";
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+}
+
+.content-box h1 {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+
+.btn-get-started {
+  margin: 10% 2%;
+  width: 30%;
+  height: auto;
+  padding: 1rem;
+  font-family: "Ubuntu";
+  font-size: 18px;
+  border-radius: 15px;
+  background: transparent;
+  border: 2px solid rgba(21, 52, 230, 0.5);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  align-items: center;
+  position: absolute;
+}
+
+.btn-get-started:hover {
+  color: white;
+  background: rgba(21, 52, 230, 0.5);
+  transform: translateY(2px);
+}
+
+.btn-get-started a {
+  text-decoration: none;
+  color: White;
+}
+
+.btn-get-started a:hover {
+  color: white;
+}
+
+.icon-arrow {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1307px) {
+  .btn-get-started {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 730px) {
@@ -107,5 +178,43 @@ button {
 
   .open {
     display: block;
+  }
+
+  .content-box {
+    margin: 4%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn-get-started {
+    left: 35%;
+    position: absolute;
+    bottom: 5%;
+    display: inline-block;
+  }
+
+  @media screen and (max-width: 880px) {
+    .content-box {
+      margin: 4%;
+      width: 100%;
+      height: 50vh;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-get-started {
+    display: none;
+  }
+
+  .content-box {
+    margin: 4%;
+    width: 100%;
+    height: auto;
+  }
+
+  section {
+    height: auto;
   }
 }
