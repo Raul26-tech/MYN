@@ -51,7 +51,7 @@ nav {
 }
 
 .nav-list li:hover {
-  transform: translateY(2px);
+  transform: translateY(3px);
 }
 
 .btn {
@@ -79,29 +79,35 @@ nav {
 
 section {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-image: url(../../assets/job2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .content-box {
   margin: 4%;
   width: 40%;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 1.5rem 2rem;
   text-align: justify;
   font-family: "Ubuntu";
   color: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .content-box h1 {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0);
   text-align: center;
   padding: 1.5rem 2rem;
+}
+
+.content-box p {
+  padding: 2%;
 }
 
 .btn-get-started {
@@ -112,7 +118,7 @@ section {
   font-family: "Ubuntu";
   font-size: 18px;
   border-radius: 15px;
-  background: transparent;
+  background: rgba(21, 52, 230, 0.5);
   border: 2px solid rgba(21, 52, 230, 0.5);
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -122,22 +128,49 @@ section {
 
 .btn-get-started:hover {
   color: white;
-  background: rgba(21, 52, 230, 0.5);
+  background: rgba(21, 52, 230, 0);
   transform: translateY(2px);
 }
 
 .btn-get-started a {
   text-decoration: none;
-  color: White;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .btn-get-started a:hover {
-  color: white;
+  color: rgba(21, 52, 230, 0.5);
 }
 
 .icon-arrow {
   margin-left: 5px;
 }
+
+/* Article */
+
+.arrow {
+  width: 5%;
+  height: 10vh;
+  border-radius: 50%;
+  top: 95%;
+  left: 50%;
+  position: absolute;
+  background: rgba(21, 52, 230, 0.8);
+  transition: 0.5s ease-out;
+}
+
+.arrow:hover {
+  background: rgba(16, 193, 206, 0.5);
+  border: 2px solid rgba(21, 52, 230, 0.5);
+}
+
+.arrow-progress {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  text-align: center;
+}
+
+/* Medias Queries */
 
 @media screen and (max-width: 1307px) {
   .btn-get-started {
@@ -188,10 +221,11 @@ section {
   }
 
   .btn-get-started {
-    left: 35%;
-    position: absolute;
-    bottom: 5%;
-    display: inline-block;
+    display: none;
+  }
+
+  .btn-get-started a {
+    color: white;
   }
 
   @media screen and (max-width: 880px) {
@@ -200,6 +234,12 @@ section {
       width: 100%;
       height: 50vh;
     }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .btn-get-started {
+    display: none;
   }
 }
 
