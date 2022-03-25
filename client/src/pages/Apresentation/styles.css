@@ -68,6 +68,7 @@ body {
 }
 
 .btn-submit:hover {
+  transform: translateY(1px);
   background: rgba(19, 56, 221, 0.9);
 }
 
