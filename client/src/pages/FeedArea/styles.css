@@ -40,7 +40,7 @@ nav {
   left: 0;
   height: auto;
   background-color: var(--main-color);
-  width: 16rem;
+  width: 20%;
   padding: 1.8rem 0.85rem;
   color: var(--text-color);
   display: flex;
@@ -88,7 +88,7 @@ main .copyright span {
 
 .logo {
   position: absolute;
-  left: 25%;
+  left: 15%;
   width: 3rem;
   border-radius: 50%;
 }
@@ -242,7 +242,7 @@ nav:hover .shrink-btn,
 
 .sidebar-footer {
   position: relative;
-  margin-top: auto;
+  margin-top: 15px;
   justify-content: center;
   font-size: 1.3rem;
   color: var(--text-color);
@@ -265,11 +265,6 @@ nav:hover .shrink-btn,
   align-items: center;
 }
 
-/* .admin-user i {
-  position: relative;
-  left: calc(100%);
-} */
-
 .admin-profile {
   white-space: nowrap;
   max-width: 100%;
@@ -288,13 +283,6 @@ nav:hover .shrink-btn,
 
 .admin-info {
   font-weight: 300;
-}
-
-.tooltip {
-  position: relative;
-  top: 15%;
-  font-size: 16px;
-  padding: 0.5rem;
 }
 
 .log-out {
@@ -334,19 +322,8 @@ nav:hover .shrink-btn,
   white-space: nowrap;
 }
 
-.tooltip span {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.tooltip span.show {
-  opacity: 0;
-}
-
 .tooltip-element:hover ~ .tooltip {
-  opacity: 1;
+  opacity: 0;
   pointer-events: all;
 }
 
