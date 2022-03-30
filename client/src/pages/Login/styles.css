@@ -1,5 +1,25 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+  background: rgba(59, 71, 110, 0.932);
+}
+
+:root {
+  --main-color: linear-gradient(
+    to left rgba(12, 58, 209, 0.932),
+    rgba(65, 107, 243, 0.932)
+  );
+  --mainColor-dark: rgba(29, 86, 110);
+  --main-color-light: rgb(0, 168, 173);
+  --text-color: #fff;
 }
