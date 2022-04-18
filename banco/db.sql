@@ -26,6 +26,14 @@ CREATE TABLE tbl_perfil(
     FOREIGN KEY (perfil_user) REFERENCES tbl_usuario(id_usuario)
 );
 
+ALTER TABLE tbl_perfil ADD (
+	cidade_uf VARCHAR(30) NOT NULL,
+    formacao VARCHAR(50) NOT NULL,
+    inst_ensino VARCHAR(50) NOT NULL
+);
+
+DESCRIBE tbl_perfil;
+
 # TABLE POSTS
 CREATE TABLE tbl_postUser(
 	id_post INT PRIMARY KEY AUTO_INCREMENT,
